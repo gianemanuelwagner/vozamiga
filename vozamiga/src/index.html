@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Lenguaje @VOZAMIGA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Lenguaje @VOZAMIGA</h1>
+    </header>
+    <main>
+        <textarea id="inputText" placeholder="Convertir texto en voz"></textarea>
+        <button onclick="limpiar()">Limpiar</button>
+        <button onclick="convertir()">Convertir</button>
+        <button onclick="hablar()">Hablar</button>
+        <div id="resultat"></div>
+
+        <!-- Primera fila de imágenes -->
+        <div id="imagenes1">
+            <img src="yo.png" alt="YO" onclick="seleccionarImagen('YO')">
+            <img src="vos.png" alt="VOS" onclick="seleccionarImagen('VOS')">
+            <img src="nosotros.png" alt="NOSOTROS" onclick="seleccionarImagen('NOSOTROS')">
+            <img src="ustedes.png" alt="USTEDES" onclick="seleccionarImagen('USTEDES')">
+        </div>
+
+        <!-- Segunda fila de imágenes -->
+        <div id="imagenes2">
+            <img src="quiero.png" alt="QUIERO" onclick="seleccionarImagen('QUIERO')">
+            <img src="queres.png" alt="QUERES" onclick="seleccionarImagen('QUERES')">
+            <img src="queremos.png" alt="QUEREMOS" onclick="seleccionarImagen('QUEREMOS')">
+            <img src="quieren.png" alt="QUIEREN" onclick="seleccionarImagen('QUIEREN')">
+        </div>
+        <!-- Tercera fila de imágenes -->
+        <div id="imagenes3">
+            <img src="comer.png" alt="COMER" onclick="seleccionarImagen('COMER')">
+            <img src="dormir.png" alt="DORMIR" onclick="seleccionarImagen('DORMIR')">
+            <img src="estudiar.png" alt="ESTUDIAR" onclick="seleccionarImagen('ESTUDIAR')">
+            <img src="trabajar.png" alt="TRABAJAR" onclick="seleccionarImagen('TRABAJAR')">
+        </div>
+    </main>
+    <footer>
+        <p>Web en desarrollo <a href="https://tuweb.com">La Pampa, Argentina</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
